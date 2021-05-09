@@ -17,12 +17,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
     </script>
-
-  <body>
+  </head>
+  <body style="opacity: 0;">
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
@@ -194,6 +195,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Eliminates FOUC (Flash of Unstyled Content) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $("body").css('opacity', 1);
+      });
+    </script>
     <!-- /END Footer Section -->
   </body>
 </html>
