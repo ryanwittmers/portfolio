@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
@@ -23,8 +23,7 @@
       ScrollReveal({ reset: false });
     </script>
   </head>
-  
-  <body style="visibility: hidden;" onload="this.style.visibility = 'visible';">
+  <body style="opacity: 0;">
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
@@ -196,6 +195,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Eliminates FOUC (Flash of Unstyled Content) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $("body").css('opacity', 1);
+      });
+    </script>
     <!-- /END Footer Section -->
   </body>
 </html>
