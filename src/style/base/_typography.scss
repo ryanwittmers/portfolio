@@ -43,7 +43,8 @@ a:hover {
   
   // Maintains gradient even on the phone size.
   @include respond(phone) {
-    background-image: linear-gradient(to right, $primary-color, $secondary-color);
+    background-image: none;
+    background: linear-gradient(90deg, $primary-color, $secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
