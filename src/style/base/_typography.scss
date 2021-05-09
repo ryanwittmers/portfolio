@@ -41,10 +41,11 @@ a:hover {
 .text-color-main {
   @include supportColorForIE11();
   
-  // Responsive text purple style
+  // Maintains gradient even on the phone size.
   @include respond(phone) {
-    background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    background-image: linear-gradient(to right, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &:hover {
