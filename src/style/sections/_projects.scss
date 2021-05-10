@@ -74,5 +74,26 @@
         }
       }
     }
+
+    .card {
+      box-shadow: 0px 4px 8px 0px #BDBDBD
+    }
+
+    .card-title {
+      color: $dark-blue-text;
+    }
+    
+    @media screen and (max-width: 999px) {
+    
+        .next,
+        .prev {
+            transform: scale(1);
+            opacity: 1
+        }
+    
+        .item {
+            display: block !important
+        }
+    }
   }
 }
