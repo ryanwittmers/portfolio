@@ -63,7 +63,7 @@ export default function() {
   ScrollReveal().reveal('.project-wrapper__image', 
     assignProps(
       {
-        delay: 1000,
+        delay: 800,
         origin: window.innerWidth > 768 ? 'right' : 'bottom'
       }, defaultProps)
   );
