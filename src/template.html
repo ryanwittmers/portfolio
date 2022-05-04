@@ -202,7 +202,7 @@
               <div class="project-wrapper__image">
                 <a href="https://doi.org/10.13140/RG.2.2.13574.24640" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                     <img src="./assets/kotlin.png" class="img-fluid" alt="The Kotlin logo."/>
+                     <img src="./assets/kotlin.png" class="img-fluid" alt="A picture of the front page of the paper."/>
                   </div>
                 </a>
               </div>
@@ -216,19 +216,47 @@
     <!-- /END Projects Section -->
 
     <!-- **** Contact Section **** -->
+<!--    <section id="contact">-->
+<!--      <div class="container">-->
+<!--        <h2 class="section-title">Contact</h2>-->
+<!--        <div class="contact-wrapper">-->
+<!--          <p class="contact-wrapper__text">Say Hi!</p>-->
+<!--          <a-->
+<!--            target="_blank"-->
+<!--            class="cta-btn cta-btn&#45;&#45;resume"-->
+<!--            href="mailto:connectwithme@0bsidian.anonaddy.com"-->
+<!--            >Contact Me</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Let's Chat!</p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:connectwithme@0bsidian.anonaddy.com"
-            >Contact Me</a>
-        </div>
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact100-form validate-form" name="contact" method="POST" data-netlify="true">
+                  <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                    <label class="input100">
+                      <input class="input100" type="text" name="name" placeholder="Full Name">
+                    </label>
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="wrap-input100 validate-input" data-validate="Please enter email: ">
+                    <input class="input100" type="text" name="email" placeholder="Email">
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                    <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                    <span class="focus-input100"></span>
+                  </div>
+                  <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn" type="submit">
+                      <b>Say Hi!</b>
+                    </button>
+                  </div>
+              </form>
       </div>
     </section>
+
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
