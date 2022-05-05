@@ -17,7 +17,8 @@
 @import './sections/hero';
 @import './sections/projects';
 
-/*---------------------------------------------*/
+
+/* Contact Form */
 input {
 	outline: none;
 	border: none;
@@ -33,15 +34,17 @@ textarea:focus, input:focus {
 }
 
 
-input::-webkit-input-placeholder { color: $white-color;}
-input:-moz-placeholder { color: $white-color;}
-input::-moz-placeholder { color: $white-color;}
-input:-ms-input-placeholder { color: $white-color;}
+$placeholder-color: linear-gradient(135deg, $primary-color, $secondary-color);
 
-textarea::-webkit-input-placeholder { color: $white-color;}
-textarea:-moz-placeholder { color: $white-color;}
-textarea::-moz-placeholder { color: $white-color;}
-textarea:-ms-input-placeholder { color: $white-color;}
+input::-webkit-input-placeholder { color: $placeholder-color; font-weight: 300;}
+input:-moz-placeholder { color: $placeholder-color; font-weight: 300;}
+input::-moz-placeholder { color: $placeholder-color; font-weight: 300;}
+input:-ms-input-placeholder { color: $placeholder-color; font-weight: 300;}
+
+textarea::-webkit-input-placeholder { color: $placeholder-color; font-weight: 300;}
+textarea:-moz-placeholder { color: $placeholder-color; font-weight: 300;}
+textarea::-moz-placeholder { color: $placeholder-color; font-weight: 300;}
+textarea:-ms-input-placeholder { color: $placeholder-color; font-weight: 300;}
 
 /*---------------------------------------------*/
 button {
@@ -58,11 +61,6 @@ iframe {
 	border: none !important;
 }
 
-
-/*---------------------------------------------*/
-.container {
-	max-width: 1200px;
-}
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
@@ -123,18 +121,13 @@ iframe {
   -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-
-/*==================================================================
-[ Form ]*/
-
-
 /*------------------------------------------------------------------
 [ Input ]*/
 
 .wrap-input100 {
   width: 100%;
   position: relative;
-  background-color: linear-gradient(135deg, $primary-color, $secondary-color);
+  background-color: $white-color;
   border-radius: 20px;
   margin-bottom: 30px;
 }
@@ -144,7 +137,8 @@ iframe {
   width: 100%;
   background: transparent;
   font-size: 16px;
-  color: $white-color;
+  font-weight: 700;
+  color: $secondary-color;
   line-height: 1.2;
 }
 
@@ -222,7 +216,7 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 42px;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   border-radius: 21px;
 
   font-size: 14px;
@@ -244,12 +238,12 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: $primary-color;
-  box-shadow: 0 10px 30px 0px $primary-color;
-  -moz-box-shadow: 0 10px 30px 0px $primary-color;
-  -webkit-box-shadow: 0 10px 30px 0px $primary-color;
-  -o-box-shadow: 0 10px 30px 0px $primary-color;
-  -ms-box-shadow: 0 10px 30px 0px $primary-color;
+  background-color: $secondary-color;
+  box-shadow: 0 10px 30px 0px $secondary-color;
+  -moz-box-shadow: 0 10px 30px 0px $secondary-color;
+  -webkit-box-shadow: 0 10px 30px 0px $secondary-color;
+  -o-box-shadow: 0 10px 30px 0px $secondary-color;
+  -ms-box-shadow: 0 10px 30px 0px $secondary-color;
 }
 
 /*------------------------------------------------------------------
