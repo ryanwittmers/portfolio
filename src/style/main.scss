@@ -33,15 +33,15 @@ textarea:focus, input:focus {
 }
 
 
-input::-webkit-input-placeholder { color: $white-color;}
-input:-moz-placeholder { color: $white-color;}
-input::-moz-placeholder { color: $white-color;}
-input:-ms-input-placeholder { color: $white-color;}
+input::-webkit-input-placeholder { color: $white-color; font-weight: 300;}
+input:-moz-placeholder { color: $white-color; font-weight: 300;}
+input::-moz-placeholder { color: $white-color; font-weight: 300;}
+input:-ms-input-placeholder { color: $white-color; font-weight: 300;}
 
-textarea::-webkit-input-placeholder { color: $white-color;}
-textarea:-moz-placeholder { color: $white-color;}
-textarea::-moz-placeholder { color: $white-color;}
-textarea:-ms-input-placeholder { color: $white-color;}
+textarea::-webkit-input-placeholder { color: $white-color; font-weight: 300;}
+textarea:-moz-placeholder { color: $white-color; font-weight: 300;}
+textarea::-moz-placeholder { color: $white-color; font-weight: 300;}
+textarea:-ms-input-placeholder { color: $white-color; font-weight: 300;}
 
 /*---------------------------------------------*/
 button {
@@ -145,20 +145,15 @@ iframe {
   background: transparent;
   font-size: 16px;
   color: $white-color;
+  font-weight: 900;
   line-height: 1.2;
 }
-
-.input100::after {
-  font-weight: 700;
-}
-
 
 /*---------------------------------------------*/
 input.input100 {
   height: 62px;
   padding: 0 20px 0 23px;
 }
-
 
 textarea.input100 {
   min-height: 199px;
@@ -177,11 +172,11 @@ textarea.input100 {
   left: 0;
   pointer-events: none;
   border-radius: 20px;
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
-  -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.08);
+  -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.08);
+  -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.08);
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -190,11 +185,11 @@ textarea.input100 {
 }
 
 .input100:focus + .focus-input100 {
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*------------------------------------------------------------------
@@ -222,11 +217,11 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 42px;
-  background-color: $secondary-color;
+  background-color: $white-color;
   border-radius: 21px;
 
   font-size: 14px;
-  color: #fff;
+  color: $secondary-color;
   line-height: 1.2;
   text-transform: uppercase;
   padding-top: 5px;
@@ -236,20 +231,11 @@ textarea.input100 {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  box-shadow: 0 10px 30px 0px $primary-color;
-  -moz-box-shadow: 0 10px 30px 0px $primary-color;
-  -webkit-box-shadow: 0 10px 30px 0px $primary-color;
-  -o-box-shadow: 0 10px 30px 0px $primary-color;
-  -ms-box-shadow: 0 10px 30px 0px $primary-color;
 }
 
 .contact100-form-btn:hover {
-  background-color: $primary-color;
-  box-shadow: 0 10px 30px 0px $primary-color;
-  -moz-box-shadow: 0 10px 30px 0px $primary-color;
-  -webkit-box-shadow: 0 10px 30px 0px $primary-color;
-  -o-box-shadow: 0 10px 30px 0px $primary-color;
-  -ms-box-shadow: 0 10px 30px 0px $primary-color;
+  background-color: $secondary-color;
+  color: $white-color;
 }
 
 /*------------------------------------------------------------------
