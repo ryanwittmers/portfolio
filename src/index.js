@@ -24,6 +24,14 @@ function addResume(pdf) {
   resumeButton.setAttribute("href", pdf);
 }
 
+// Auto resizes the textarea if content is added that exceeds the default size.
+$("textarea").each(function () {
+  this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+}).on("input", function () {
+  this.style.height = "auto";
+  this.style.height = (this.scrollHeight) + "px";
+});
+
 initSr();
 initTilt();
 
